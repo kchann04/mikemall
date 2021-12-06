@@ -386,6 +386,21 @@ footer{display: none;}
   header{height: 80px;}
   header .logo{left: 32px;}
   header .logo a{width: 116px; height: 80px; background-size: auto 80px;}
+  header .gnb{
+    display: block;
+    width: 200px;
+    position: absolute; top: 80px; right: -200px;
+    background-color: #0166cc;
+    padding: 20px 0;
+  }
+  header .gnb a{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0;
+  }
   header .btn_box{top: 30px; right: 32px;}
   header .btn_box button{
     width: 40px; height: 40px;
