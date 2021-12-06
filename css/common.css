@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* 공통으로 사용하는 css */
+.clear::after{content: ''; display: block; clear: both;}
+.hidden{font-size: 0; color: transparent;}
+
+/* font */
+.font_bold{font-weight: 400 !important;}
+.font_color_wh{color: #fff !important;}
+
+@media (min-width:1200px){
+  .inner{width: 1200px; margin: 0 auto;}
+}
