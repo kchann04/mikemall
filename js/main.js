@@ -25,7 +25,15 @@ $(document).ready(function(){//시작
   });// tab 끝
 
   $(".btn_box .menu").click(function(){
+    $(this).hide(500);
+    $(".btn_box .close").show(500);
     $("header .gnb").animate({"right":"0"},500);
+  });
+
+  $(".btn_box .close").click(function(){
+    $(this).hide(500);
+    $(".btn_box .menu").show(500);
+    $("header .gnb").animate({"right":"-150px"},500)
   });
 
 });//끝

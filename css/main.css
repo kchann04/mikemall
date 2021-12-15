@@ -82,16 +82,10 @@ header .btn_box button{
 .mypage{background-image: url(../img/icon_mp_bk.png);}
 .search{background-image: url(../img/icon_sc_bk.png);}
 .menu{background-image: url(../img/icon_menu.png);}
+.close{background-image: url(../img/close.png); display: none;}
 
 header .btn_box button:hover.mypage{background-image: url(../img/icon_mp_bl.png);}
 header .btn_box button:hover.search{background-image: url(../img/icon_sc_bl.png);}
-
-header .menu_bar{
-  width: 150px;
-  height: 250px;
-  background-color: #0166cc;
-  position: absolute; top: 0; right: 0;
-}
 
 /* #container 시작 */
 
