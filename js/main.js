@@ -25,10 +25,6 @@ $(document).ready(function(){//시작
   });// tab 끝
 
   
-  startWidth();
-  resonsiveWidth();
-  $(window).resize(resonsiveWidth);
-
   function startWidth(){
     win = $(window).width();
     if (win < 1200) {
@@ -49,7 +45,6 @@ $(document).ready(function(){//시작
     }
   }
 
-
   function mobileBox() {
     // 모바일에서 실행 내용
     $("header .gnb").css({"right":"-200px"});
@@ -58,13 +53,13 @@ $(document).ready(function(){//시작
     $(".btn_box .menu").click(function(){
       $(this).hide(500);
       $(".btn_box .close").show(500);
-      $("header .gnb").animate({"right":"0"},500);
+      $("header .gnb").stop().animate({"right":"0"},500);
     });
   
     $(".btn_box .close").click(function(){
       $(this).hide(500);
       $(".btn_box .menu").show(500);
-      $("header .gnb").animate({"right":"-200px"},500)
+      $("header .gnb").stop().animate({"right":"-200px"},500)
     });
   }
 
@@ -74,6 +69,11 @@ $(document).ready(function(){//시작
     $("header .gnb").css({"right":"170px"});
    
   }
+
+  startWidth();
+  resonsiveWidth();
+  $(window).resize(resonsiveWidth);
+
 
 
 });//끝
