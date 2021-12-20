@@ -20,7 +20,21 @@ header .logo a{
   font-size: 0;
   color: transparent;
 }
-/* header .gnb{display: none;} */
+header .gnb{
+  display: block;
+  width: 150px;
+  position: absolute; top: 40px; right: -150px;
+  background-color: #0166cc;
+  padding: 10px 0;
+}
+header .gnb a{
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 0;
+}
 header .btn_box{position: absolute; top: 13px; right: 16px;}
 header .btn_box button{
   width: 20px;
@@ -35,6 +49,7 @@ header .btn_box button{
 .mypage{background-image: url(../img/icon_mp_bk.png);}
 .search{background-image: url(../img/icon_sc_bk.png);}
 .menu{background-image: url(../img/icon_menu.png);}
+.close{background-image: url(../img/close.png); display: none;}
 
 header .btn_box button:hover.mypage{background-image: url(../img/icon_mp_bl.png);}
 header .btn_box button:hover.search{background-image: url(../img/icon_sc_bl.png);}
@@ -217,6 +232,21 @@ footer{display: none;}
   header{height: 80px;}
   header .logo{left: 32px;}
   header .logo a{width: 116px; height: 80px; background-size: auto 80px;}
+  header .gnb{
+    display: block;
+    width: 200px;
+    position: absolute; top: 80px; right: -200px;
+    background-color: #0166cc;
+    padding: 20px 0;
+  }
+  header .gnb a{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0;
+  }
   header .btn_box{top: 30px; right: 32px;}
   header .btn_box button{
     width: 40px; height: 40px;
@@ -335,7 +365,13 @@ footer{display: none;}
   /* header */
   header .inner{position: relative;}
   .menu{display: none;}
-  header .gnb{display: block; width: 580px; position: absolute; top: 0; right: 170px;}
+  header .gnb{
+    display: block;
+    width: 580px;
+    position: absolute; top: 0; right: 170px;
+    background-color: #fff;
+    padding: 0;
+  }
   header .gnb a{
     float: left;
     display: block;
@@ -345,10 +381,14 @@ footer{display: none;}
     line-height: 80px;
     font-size: 2.0rem;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 0.5s;
+    color: #222;
+    padding: 0;
   }
-  header .gnb a:hover{color: #fff; background-color: #0166cc; font-weight: normal;}
+  header .gnb a:hover{color: #fff; background-color: #0166cc;}
   header .btn_box{top: 20px;}
+  header .btn_box button:hover.mypage{background-image: url(../img/icon_mp_bl.png);}
+  header .btn_box button:hover.search{background-image: url(../img/icon_sc_bl.png);}
 
   /* visual */
   .visual_sub02{
