@@ -33,7 +33,7 @@ $(document).ready(function(){//시작
   $(".btn_box .close").click(function(){
     $(this).hide(500);
     $(".btn_box .menu").show(500);
-    $("header .gnb").animate({"right":"-150px"},500)
+    $("header .gnb").animate({"right":"-200px"},500)
   });
 
 });//끝
