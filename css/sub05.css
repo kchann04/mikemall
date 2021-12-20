@@ -253,7 +253,7 @@ footer{display: none;}
     background-size: auto 40px;
     margin-left: 20px;
     /* transform: scale(1); */
-    transition: all 0.2s;
+    /* transition: all 0.2s; */
   }
 
   /* container 시작 */
